@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="meta_title">Portfolio — Mateo Nieroz</title>
+    <meta
+      name="description"
+      content="Portfolio de Mateo Nieroz — étudiant ingénieur (bâtiments durables & intelligents) et Master MAE."
+      data-i18n-attr="content:meta_description"
+    />
+
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="header" id="top">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Retour en haut">
+            <span class="brand-avatar" aria-hidden="true">
+                <img src="img/Photo%20profil.jpeg" alt="Photo de profil de Mateo Nieroz" />
+            </span>
+            <span class="brand-name">Mateo Nieroz</span>
+        </a>
+
+        <nav class="nav" aria-label="Navigation principale">
+          <a href="#apropos" data-i18n="nav_about">À propos</a>
+          <a href="#competences" data-i18n="nav_skills">Compétences</a>
+          <a href="#experience" data-i18n="nav_experience">Expérience</a>
+          <a href="#projets" data-i18n="nav_projects">Projets</a>
+          <a href="#formation" data-i18n="nav_education">Formation</a>
+          <a class="nav-cta" href="#contact" data-i18n="nav_contact">Contact</a>
+        </nav>
+
+        <button class="lang-toggle" id="langToggle" aria-label="Changer la langue">EN</button>
+
+        <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <div class="mobile-nav" id="mobileNav" hidden>
+        <a href="#apropos" data-i18n="nav_about">À propos</a>
+        <a href="#competences" data-i18n="nav_skills">Compétences</a>
+        <a href="#experience" data-i18n="nav_experience">Expérience</a>
+        <a href="#projets" data-i18n="nav_projects">Projets</a>
+        <a href="#formation" data-i18n="nav_education">Formation</a>
+        <a href="#contact" data-i18n="nav_contact">Contact</a>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <main>
+      <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+
+        <div class="container hero-content">
+          <p class="hero-kicker" data-i18n="hero_kicker">Portfolio — Ingénierie & Management</p>
+
+          <h1>Mateo Nieroz</h1>
+
+          <p class="hero-subtitle" data-i18n="hero_subtitle">
+            Étudiant en 5ᵉ année de cycle ingénieur à Polytech Nice Sophia, spécialisé en bâtiments durables et intelligents,
+            et en parallèle en Master MAE (Management et Administration des Entreprises) à l’IAE de Nice.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn primary" href="#projets" data-i18n="btn_view_projects">Voir mes projets</a>
+            <a class="btn ghost" href="#contact" data-i18n="btn_contact">Me contacter</a>
+            <a class="btn" href="assets/CV%20Nieroz%20Mateo.pdf" download data-i18n="btn_download_cv">Télécharger mon CV</a>
+          </div>
+
+          <div class="hero-badges" aria-label="Informations rapides">
+            <div class="badge">
+              <span class="badge-title" data-i18n="badge_location_title">Localisation</span>
+              <span class="badge-value" data-i18n="badge_location_value">Grasse, France</span>
+            </div>
+            <div class="badge">
+              <span class="badge-title" data-i18n="badge_language_title">Anglais</span>
+              <span class="badge-value" data-i18n="badge_language_value">B2 — TOEIC 845</span>
+            </div>
+            <div class="badge">
+              <span class="badge-title" data-i18n="badge_tools_title">Outils</span>
+              <span class="badge-value" data-i18n="badge_tools_value">Robot • Abaqus • Revit • AutoCAD • Excel</span>
+            </div>
+          </div>
+        </div>
+
+        <a class="scroll-indicator" href="#apropos" aria-label="Aller à À propos">
+          <span></span>
+        </a>
+      </section>
+
+      <!-- A PROPOS -->
+      <section class="section" id="apropos">
+        <div class="container grid-2">
+          <div>
+            <h2 data-i18n="about_title">À propos</h2>
+
+            <p class="lead" data-i18n="about_lead">
+              Je m’appelle Mateo Nieroz. Je suis étudiant en 5ᵉ année de cycle ingénieur à Polytech Nice Sophia, spécialisé en
+              bâtiments durables et intelligents, et je suis également un Master MAE (Management et Administration des Entreprises)
+              à l’IAE de Nice.
+            </p>
+
+            <p data-i18n="about_p1">
+              J’aime comprendre comment un projet se construit, de l’analyse et la conception jusqu’au suivi technique.
+              Mon parcours me permet de combiner une approche ingénierie (modélisation, analyse, rigueur) avec une vision
+              organisationnelle (gestion de projet, priorités, prise de décision).
+            </p>
+
+            <p data-i18n="about_p2">
+              Curieux, impliqué et orienté résultats, je m’intéresse particulièrement aux sujets liés aux structures, à la
+              modélisation numérique et aux bâtiments performants.
+            </p>
+
+            <div class="chips" aria-label="Qualités">
+              <span class="chip" data-i18n="chip_team">Esprit d’équipe</span>
+              <span class="chip" data-i18n="chip_autonomous">Autonome</span>
+              <span class="chip" data-i18n="chip_pm">Gestion de projet</span>
+              <span class="chip" data-i18n="chip_priorities">Priorités & décision</span>
+            </div>
+          </div>
+
+          <aside class="card">
+            <h3 data-i18n="info_title">Informations</h3>
+
+            <div class="kv">
+              <div class="kv-row"><span data-i18n="info_name_label">Nom</span><span>Mateo Nieroz</span></div>
+              <div class="kv-row"><span data-i18n="info_city_label">Ville</span><span data-i18n="info_city_value">Grasse, France</span></div>
+              <div class="kv-row">
+                <span data-i18n="info_phone_label">Téléphone</span>
+                <span><a href="tel:+33695318569">+33 (0)6 95 31 85 69</a></span>
+              </div>
+              <div class="kv-row">
+                <span data-i18n="info_email_label">Email</span>
+                <span><a href="mailto:nieroz.mateo@gmail.com">nieroz.mateo@gmail.com</a></span>
+              </div>
+              <div class="kv-row"><span data-i18n="info_license_label">Permis</span><span data-i18n="info_license_value">Permis B</span></div>
+            </div>
+
+            <a class="btn primary full" href="assets/CV%20Nieroz%20Mateo.pdf" download data-i18n="btn_download_cv">
+              Télécharger mon CV
+            </a>
+          </aside>
+        </div>
+      </section>
+
+      <!-- COMPETENCES -->
+      <section class="section" id="competences">
+        <div class="container">
+          <div class="section-head">
+            <h2 data-i18n="skills_title">Compétences</h2>
+            <p data-i18n="skills_intro">Compétences techniques + outils + soft skills, structurés clairement.</p>
+          </div>
+
+          <div class="grid-3">
+            <article class="card">
+              <h3 data-i18n="skills_block1_title">Ingénierie & Technique</h3>
+              <ul class="list">
+                <li data-i18n="skills_b1_1">Analyse par éléments finis</li>
+                <li data-i18n="skills_b1_2">Modélisation 3D & dimensionnement</li>
+                <li data-i18n="skills_b1_3">Vérifications manuelles sous Excel</li>
+                <li data-i18n="skills_b1_4">Géotechnique</li>
+                <li data-i18n="skills_b1_5">Construction bois / métal</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3 data-i18n="skills_block2_title">Gestion & Organisation</h3>
+              <ul class="list">
+                <li data-i18n="skills_b2_1">Gestion de projet</li>
+                <li data-i18n="skills_b2_2">Suivi des dépenses & contrôle des coûts</li>
+                <li data-i18n="skills_b2_3">Analyse stratégique & prise de décision</li>
+                <li data-i18n="skills_b2_4">Gestion des priorités</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3 data-i18n="skills_block3_title">Logiciels</h3>
+              <ul class="list">
+                <li data-i18n="skills_b3_1">Autodesk Robot Structural Analysis</li>
+                <li data-i18n="skills_b3_2">Abaqus</li>
+                <li data-i18n="skills_b3_3">Revit</li>
+                <li data-i18n="skills_b3_4">AutoCAD</li>
+                <li data-i18n="skills_b3_5">Excel / Word</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="skills">
+            <div class="skill">
+              <div class="skill-top"><span data-i18n="meter_1_label">Robot / Analyse EF</span><span data-i18n="meter_level_advanced">Avancé</span></div>
+              <div class="bar"><div class="bar-fill" style="width:78%"></div></div>
+            </div>
+            <div class="skill">
+              <div class="skill-top"><span data-i18n="meter_2_label">Revit / Conception 3D</span><span data-i18n="meter_level_good">Bon</span></div>
+              <div class="bar"><div class="bar-fill" style="width:70%"></div></div>
+            </div>
+            <div class="skill">
+              <div class="skill-top"><span data-i18n="meter_3_label">Excel (vérifs / contrôle)</span><span data-i18n="meter_level_good">Bon</span></div>
+              <div class="bar"><div class="bar-fill" style="width:75%"></div></div>
+            </div>
+            <p class="hint" data-i18n="meter_hint">Les niveaux sont indicatifs et peuvent être ajustés.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section class="section" id="experience">
+        <div class="container">
+          <div class="section-head">
+            <h2 data-i18n="exp_title">Expérience professionnelle</h2>
+            <p data-i18n="exp_intro">Expérience en environnement hospitalier exigeant — Eiffage Énergies Systèmes (2024).</p>
+          </div>
+
+          <div class="timeline">
+            <div class="t-item">
+              <div class="t-dot"></div>
+              <div class="t-card card">
+                <div class="t-top">
+                  <h3 data-i18n="exp_role">Assistant Responsable d’Affaires</h3>
+                  <span class="pill">2024</span>
+                </div>
+
+                <p class="muted" data-i18n="exp_context">
+                  Crystal Sam Monaco — Eiffage Énergies Systèmes — Chantier du Nouveau Centre Hospitalier Princesse Grace (Monaco).
+                </p>
+
+                <ul class="list">
+                  <li data-i18n="exp_li_1">Spécialisation en génie énergétique et climatique (CVC) sur chantier hospitalier.</li>
+                  <li data-i18n="exp_li_2">Analyse des systèmes de ventilation et gestion des flux d’air (blocs opératoires, chambres, locaux techniques).</li>
+                  <li data-i18n="exp_li_3">Étude des procédés thermiques et aérauliques pour assurer la qualité d’air et la conformité aux normes.</li>
+                  <li data-i18n="exp_li_4">Supervision des réseaux hydrauliques (chauffage, climatisation, infrastructures sanitaires).</li>
+                  <li data-i18n="exp_li_5">Suivi qualité et conformité des installations via des outils numériques.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJETS -->
+      <section class="section" id="projets">
+        <div class="container">
+          <div class="section-head">
+            <h2 data-i18n="projects_title">Projets d’études</h2>
+            <p data-i18n="projects_intro">Sélection de projets réalisés pendant la formation.</p>
+          </div>
+
+          <div class="grid-3">
+            <article class="project card">
+              <div class="project-thumb" aria-hidden="true"></div>
+              <h3 data-i18n="proj_1_title">Analyse EF & dimensionnement sous Robot</h3>
+              <p class="muted" data-i18n="proj_1_desc">
+                Modélisation 3D d’un portique à trois niveaux. Analyse statique/dynamique. Vérifications manuelles sous Excel puis
+                validation via Robot Structural Analysis.
+              </p>
+              <div class="tags">
+                <span data-i18n="tag_robot">Robot</span>
+                <span data-i18n="tag_fea">Analyse EF</span>
+                <span data-i18n="tag_excel">Excel</span>
+                <span data-i18n="tag_structures">Structure</span>
+              </div>
+            </article>
+
+            <article class="project card">
+              <div class="project-thumb" aria-hidden="true"></div>
+              <h3 data-i18n="proj_2_title">Bâtiments durables & conception 3D</h3>
+              <p class="muted" data-i18n="proj_2_desc">
+                Définition des choix techniques d’une esquisse (fondations, façades, toitures, ouvertures, cloisons, murs, sols)
+                + CVC + urbanisme. Conception 3D sous Revit.
+              </p>
+              <div class="tags">
+                <span data-i18n="tag_revit">Revit</span>
+                <span data-i18n="tag_design">Conception</span>
+                <span data-i18n="tag_hvac">CVC</span>
+                <span data-i18n="tag_sustainable">Durable</span>
+              </div>
+            </article>
+
+            <article class="project card">
+              <div class="project-thumb" aria-hidden="true"></div>
+              <h3 data-i18n="proj_3_title">Gestion de projet & priorités</h3>
+              <p class="muted" data-i18n="proj_3_desc">
+                Mise en pratique de la gestion de projet : priorisation, prise de décision, suivi des dépenses et contrôle des coûts.
+              </p>
+              <div class="tags">
+                <span data-i18n="tag_pm">Gestion de projet</span>
+                <span data-i18n="tag_costs">Coûts</span>
+                <span data-i18n="tag_decision">Décision</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- FORMATION -->
+      <section class="section" id="formation">
+        <div class="container">
+          <div class="section-head">
+            <h2 data-i18n="edu_title">Formations</h2>
+            <p data-i18n="edu_intro">Parcours académique (ingénierie + management).</p>
+          </div>
+
+          <div class="timeline">
+            <div class="t-item">
+              <div class="t-dot"></div>
+              <div class="t-card card">
+                <div class="t-top">
+                  <h3 data-i18n="edu_1_title">Diplôme d’ingénieur — Bâtiments Durables & Intelligents</h3>
+                  <span class="pill" data-i18n="edu_1_date">2021 — 2026</span>
+                </div>
+                <p class="muted" data-i18n="edu_1_school">Université Côte d’Azur — Polytech Nice Sophia</p>
+              </div>
+            </div>
+
+            <div class="t-item">
+              <div class="t-dot"></div>
+              <div class="t-card card">
+                <div class="t-top">
+                  <h3 data-i18n="edu_2_title">Licence Sciences et Technologies (Mention Bien)</h3>
+                  <span class="pill" data-i18n="edu_2_date">2021 — 2024</span>
+                </div>
+                <p class="muted" data-i18n="edu_2_school">Université Côte d’Azur</p>
+              </div>
+            </div>
+
+            <div class="t-item">
+              <div class="t-dot"></div>
+              <div class="t-card card">
+                <div class="t-top">
+                  <h3 data-i18n="edu_3_title">Master MAE — Management & Administration des Entreprises</h3>
+                  <span class="pill" data-i18n="edu_3_date">2025 — 2026</span>
+                </div>
+                <p class="muted" data-i18n="edu_3_school">Université Côte d’Azur — Double diplôme IAE Nice</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid-3 mt-16">
+            <article class="card">
+              <h3 data-i18n="langs_title">Langues</h3>
+              <ul class="list">
+                <li data-i18n="langs_fr">Français : langue natale</li>
+                <li data-i18n="langs_en">Anglais : B2 — TOEIC 845/990</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3 data-i18n="soft_title">Soft skills</h3>
+              <ul class="list">
+                <li data-i18n="soft_1">Esprit d’équipe</li>
+                <li data-i18n="soft_2">Gestion de projet</li>
+                <li data-i18n="soft_3">Autonomie</li>
+                <li data-i18n="soft_4">Prise de décision & priorités</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3 data-i18n="interests_title">Centres d’intérêt</h3>
+              <ul class="list">
+                <li data-i18n="interests_1">Sport : football, running</li>
+                <li data-i18n="interests_2">Voyages & découverte du monde</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="section" id="contact">
+        <div class="container grid-2">
+          <div>
+            <h2 data-i18n="contact_title">Contact</h2>
+            <p class="lead" data-i18n="contact_lead">
+              Vous pouvez me contacter via email ou téléphone.
+            </p>
+
+            <div class="contact-cards">
+              <div class="card">
+                <h3 data-i18n="contact_email_title">Email</h3>
+                <p class="muted"><a href="mailto:nieroz.mateo@gmail.com">nieroz.mateo@gmail.com</a></p>
+              </div>
+
+              <div class="card">
+                <h3 data-i18n="contact_phone_title">Téléphone</h3>
+                <p class="muted"><a href="tel:+33695318569">+33 (0)6 95 31 85 69</a></p>
+              </div>
+
+              <div class="card">
+                <h3 data-i18n="contact_location_title">Localisation</h3>
+                <p class="muted" data-i18n="contact_location_value">Grasse, France</p>
+              </div>
+
+                <div class="card">
+                    <h3>LinkedIn</h3>
+                    <p class="muted">
+                        <a href="https://www.linkedin.com/in/mat%C3%A9o-n-26a0162bb/" target="_blank" rel="noreferrer">
+                        www.linkedin.com/in/matéo-n-26a0162bb
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+
+            <a class="btn primary mt-16" href="assets/CV%20Nieroz%20Mateo.pdf" download data-i18n="btn_download_cv">
+              Télécharger mon CV
+            </a>
+          </div>
+
+          <form class="card form" onsubmit="return false;">
+        <h3 data-i18n="form_title">Message rapide</h3>
+
+        <label>
+            <span data-i18n="form_name_label">Nom</span>
+            <input id="name" type="text" data-i18n-placeholder="form_name_ph" placeholder="Votre nom" />
+        </label>
+
+        <label>
+            <span data-i18n="form_email_label">Email</span>
+            <input id="email" type="email" data-i18n-placeholder="form_email_ph" placeholder="votre.email@exemple.com" />
+        </label>
+
+        <label>
+            <span data-i18n="form_message_label">Message</span>
+            <textarea id="message" rows="6" data-i18n-placeholder="form_message_ph" placeholder="Bonjour Mateo, ..."></textarea>
+        </label>
+
+        <button class="btn primary" type="button" id="copyMail" data-i18n="form_btn">
+            Préparer un email
+        </button>
+
+        <p class="hint" id="formHint" data-i18n="form_hint">
+            Le bouton prépare un email (copie + ouverture de la messagerie).
+        </p>
+        </form>
+
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container footer-inner">
+          <p data-i18n="footer_copy">© <span id="year"></span> Mateo Nieroz</p>
+          <a class="link" href="#top" data-i18n="footer_top">Retour en haut ↑</a>
+        </div>
+      </footer>
+    </main>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
